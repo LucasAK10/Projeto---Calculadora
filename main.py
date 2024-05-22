@@ -13,8 +13,8 @@ while True:
     print('"*" para multiplicar.')
     print('"/" para dividir.')
     print('"%" para encontrar o resto da divisão.')
-    print('"^" para exponenciar.')
-    print('"!" para encontrar o fatorial.')
+    
+    
     
 
     op = input('Operação desejada: ')
@@ -30,10 +30,26 @@ while True:
             print(f'A divisão é: {x / y}.')
         case '%':
             print(f'O resto da divisão é: {x % y}.')
-        case '^':
-            print(f'A exponecial é {x^y}')
-        case '!':
-            print(f'A fatoral é {x!}')
-        case _:
+        case _: 
             print('Operação inválida.')
             continue 
+
+    # pergunta para o usuário se deseja continuar ou encerrar
+    continuar = input('Deseja continuar (s/n)?')
+
+
+    # verifica a opção do usuário
+    if continuar == 'ss':
+        continue
+    elif continuar == 'nn':
+        break
+    else: 
+        print('Opção Invalida')
+        continue
+
+
+
+
+
+    
+         
